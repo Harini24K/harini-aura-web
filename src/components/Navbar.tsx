@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
-  { label: "Skills", href: "#skills" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/about" },
+  { label: "Projects", href: "/projects" },
+  { label: "Experience", href: "/experience" },
+  { label: "Skills", href: "/skills" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
@@ -26,19 +27,19 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        <a href="#hero" className="font-heading text-lg font-bold gradient-text">
+        <Link to="/" className="font-heading text-lg font-bold gradient-text">
           HK
-        </a>
+        </Link>
 
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.label}
-              href={item.href}
+              to={item.href}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors font-medium"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -54,14 +55,14 @@ const Navbar = () => {
       {open && (
         <div className="md:hidden glass-card mt-2 mx-4 rounded-xl p-4 space-y-3">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.label}
-              href={item.href}
+              to={item.href}
               onClick={() => setOpen(false)}
               className="block text-sm text-muted-foreground hover:text-foreground transition-colors font-medium"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
       )}
