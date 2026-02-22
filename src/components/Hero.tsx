@@ -41,7 +41,7 @@ const Hero = () => {
           className="text-muted-foreground/80 text-sm md:text-base max-w-2xl mx-auto mb-10 leading-relaxed"
         >
           I build scalable web applications and AI-powered systems that solve real-world problems
-          — from healthcare AI to legal-tech automation and startup simulation platforms.
+          from healthcare AI to legal-tech automation and startup simulation platforms.
         </motion.p>
 
         <motion.div
