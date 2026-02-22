@@ -3,12 +3,12 @@ import { useRef } from "react";
 import { Award, Users, Shield, BookOpen } from "lucide-react";
 
 const achievements = [
-  { icon: Users, text: "Core Member – Google Developer Groups (1 year)" },
-  { icon: Shield, text: "DevOps & Infra Lead – AWS Cloud Club" },
-  { icon: Award, text: "GenAI Certified Professional – Oracle" },
-  { icon: Shield, text: "Cybersecurity Fundamentals – NASSCOM" },
+  { icon: Users, text: "Core Member, Google Developer Groups (1 year)" },
+  { icon: Shield, text: "DevOps & Infra Lead, AWS Cloud Club" },
+  { icon: Award, text: "GenAI Certified Professional, Oracle" },
+  { icon: Shield, text: "Cybersecurity Fundamentals, NASSCOM" },
   { icon: BookOpen, text: "NPTEL Python for Data Science" },
-  { icon: Award, text: "Participant – SUSTAIN-A-THON 2024" },
+  { icon: Award, text: "Participant, SUSTAIN-A-THON 2024" },
 ];
 
 const Leadership = () => {

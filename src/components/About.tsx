@@ -7,8 +7,8 @@ const About = () => {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   const skills = [
-    "React", "Django", "Flask", "FastAPI", "Diffusion Models",
-    "NLP", "Product Thinking", "System Design"
+    "C", "Python", "Java", "Problem Solving",
+    "Critical Thinking", "Basic ML Algo"
   ];
 
   return (

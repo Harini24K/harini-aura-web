@@ -34,7 +34,7 @@ const Skills = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.4, delay: i * 0.05 }}
-              className="glass-card rounded-xl p-5"
+              className="glass-card-hover rounded-xl p-5 border border-primary/20"
             >
               <h3 className="font-heading text-xs font-semibold text-primary tracking-wider uppercase mb-3">
                 {cat.label}
