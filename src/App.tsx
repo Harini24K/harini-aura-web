@@ -20,7 +20,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <CursorGlow />
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+   <BrowserRouter basename="/harini-aura-web/">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<AboutPage />} />
