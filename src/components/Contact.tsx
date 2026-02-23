@@ -78,6 +78,23 @@ const Contact = () => {
           ))}
         </div>
 
+        {/* Resume Download */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="flex justify-center mb-10"
+        >
+          <a
+            href="/Harini__K.htm"
+            download
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-heading font-medium text-sm hover:bg-primary/90 transition-all duration-300"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+            Resume
+          </a>
+        </motion.div>
+
         {/* Message Form */}
         <motion.form
           onSubmit={handleSubmit}

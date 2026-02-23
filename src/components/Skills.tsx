@@ -2,9 +2,9 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const skillCategories = [
-  { label: "Programming", items: ["C", "C++", "Python"] },
+  { label: "Programming", items: ["C", "Python", "Java"] },
   { label: "Frontend", items: ["HTML", "CSS", "JavaScript", "React"] },
-  { label: "Backend", items: ["Django", "Flask", "FastAPI"] },
+  { label: "Backend", items: ["Django", "Flask (Basic)", "FastAPI (Basic)"] },
   { label: "Database", items: ["MySQL"] },
   { label: "AI / ML", items: ["Diffusion Models", "NLP Basics"] },
   { label: "Cloud & DevOps", items: ["AWS Fundamentals"] },

@@ -26,19 +26,18 @@ const About = () => {
         <div className="grid md:grid-cols-5 gap-10">
           <div className="md:col-span-3 space-y-4 text-muted-foreground leading-relaxed text-sm md:text-base">
             <p>
-              I'm a full-stack developer and generative AI engineer who doesn't just write code — I build products.
-              With deep experience across <span className="text-foreground font-medium">React, Flask, Django, and FastAPI</span>,
-              I architect systems that are both scalable and user-centric.
-            </p>
-            <p>
-              My work in <span className="text-foreground font-medium">generative AI</span> spans diffusion models for creative applications and NLP pipelines for
-              legal-tech and healthcare domains. I approach every project with a product mindset —
-              validating ideas, designing for impact, and shipping fast.
-            </p>
-            <p>
-              Beyond engineering, I lead communities as a <span className="text-foreground font-medium">DevOps & Infra Lead at AWS Cloud Club</span> and
-              core member of <span className="text-foreground font-medium">Google Developer Groups</span>, constantly pushing the boundaries of what's possible with technology.
-            </p>
+  I'm a Computer Science student passionate about building AI-powered and web-based applications that solve real-world problems. 
+  I enjoy working with <span className="text-foreground font-medium">React, Flask, Django, and FastAPI</span> to create clean, functional, and user-friendly systems.
+</p>
+<p>
+  My projects explore <span className="text-foreground font-medium">generative AI and intelligent automation</span>, from creative AI applications to solutions in healthcare and legal-tech. 
+  I focus on turning ideas into working products through continuous learning and experimentation.
+</p>
+<p>
+  Beyond development, I actively contribute to tech communities as a <span className="text-foreground font-medium">DevOps & Infra Lead at AWS Cloud Club</span> 
+  and a core member of <span className="text-foreground font-medium">Google Developer Groups</span>, where I collaborate, learn, and grow with like-minded peers.
+</p>
+              
           </div>
 
           <div className="md:col-span-2">

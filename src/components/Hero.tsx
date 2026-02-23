@@ -31,7 +31,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-muted-foreground text-base md:text-lg font-heading mb-6 tracking-wide"
         >
-          Full Stack Developer · Generative AI Engineer · AI Product Builder
+          Tech Enthusiast · AI Product Builder
         </motion.p>
 
         <motion.p
@@ -40,8 +40,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-muted-foreground/80 text-sm md:text-base max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          I build scalable web applications and AI-powered systems that solve real-world problems
-          from healthcare AI to legal-tech automation and startup simulation platforms.
+          Passionate about developing AI-powered and web-based applications that solve real-world challenges through practical innovation.
         </motion.p>
 
         <motion.div
@@ -65,7 +64,8 @@ const Hero = () => {
             Contact Me
           </Link>
           <a
-            href="#"
+            href="/Harini__K.pdf"
+            download
             className="inline-flex items-center gap-2 border border-border px-6 py-3 rounded-lg font-heading font-medium text-sm text-muted-foreground hover:text-foreground hover:border-primary/50 transition-all duration-300"
           >
             <Download className="w-4 h-4" />
@@ -73,14 +73,6 @@ const Hero = () => {
           </a>
         </motion.div>
       </div>
-
-      <motion.div
-        animate={{ y: [0, 8, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
-      >
-        <ArrowDown className="w-5 h-5 text-muted-foreground/40" />
-      </motion.div>
     </section>
   );
 };
