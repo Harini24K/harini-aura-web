@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import { Mail, Phone, Github, Linkedin, Send, Code2, Trophy } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 const socialLinks = [
   { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/harini-k-33bb38299/" },
@@ -24,12 +25,19 @@ const Contact = () => {
       return;
     }
     setSending(true);
-    // TODO: connect to backend
-    setTimeout(() => {
+    try {
+      const { error } = await supabase
+        .from("contact_messages")
+        .insert({ name: form.name.trim(), email: form.email.trim(), message: form.message.trim() });
+      if (error) throw error;
       toast.success("Message sent successfully!");
       setForm({ name: "", email: "", message: "" });
+    } catch (err: any) {
+      toast.error("Failed to send message. Please try again.");
+      console.error(err);
+    } finally {
       setSending(false);
-    }, 1000);
+    }
   };
 
   return (
@@ -86,7 +94,7 @@ const Contact = () => {
           className="flex justify-center mb-10"
         >
           <a
-            href="/Harini__K.htm"
+            href="/Harini__K.pdf"
             download
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-heading font-medium text-sm hover:bg-primary/90 transition-all duration-300"
           >
